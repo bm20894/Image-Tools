@@ -17,6 +17,6 @@ A main script (run from terminal) processes an image with a library of image too
 
 ### Miles's Tasks
 * [x] Create Package Structure
-* [x] main.py file
+* [ ] main.py file
 	* [x] Takes user input (image file, tool to apply)
 	* [ ] Displays output of applied tool next to original image
