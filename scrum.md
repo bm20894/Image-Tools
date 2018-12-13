@@ -16,7 +16,7 @@ A main script (run from terminal) processes an image with a library of image too
 * [ ] Thermal Coloring
 
 ### Miles's Tasks
-* [ ] Create Package Structure
+* [x] Create Package Structure
 * [ ] main.py file
 	* Takes user input (image file, tool to apply)
 	* Displays output of applied tool next to original image
