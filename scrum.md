@@ -12,6 +12,7 @@ A main script (run from terminal) processes an image with a library of image too
 
 ### Egan's Tasks
 * [ ] Polygon Packing
+	* Function Name: `poly(image)`
 * [ ] Grayscale Coloring
 * [ ] Thermal Coloring
 
