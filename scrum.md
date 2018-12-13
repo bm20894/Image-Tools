@@ -14,7 +14,7 @@ A main script (run from terminal) processes an image with a library of image too
 * [ ] Polygon Packing
 	* Function Name: `poly(image)`
 * [ ] Grayscale Coloring
-	* Function Name: `grey(image)`
+	* Function Name: `gray(image)`
 * [ ] Thermal Coloring
 	* Function Name: `thermal(image)`
 
