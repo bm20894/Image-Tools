@@ -11,12 +11,12 @@ A main script (run from terminal) processes an image with a library of image too
 * Number Visualization (colored mosaic)
 
 ### Egan's Tasks
-- [ ]Polygon Packing
-- [ ]Grayscale Coloring
-- [ ]Thermal Coloring
+* [ ] Polygon Packing
+* [ ] Grayscale Coloring
+* [ ] Thermal Coloring
 
 ### Miles's Tasks
-- [ ] Create Package Structure
-- [ ] main.py file
+* [ ] Create Package Structure
+* [ ] main.py file
 	* Takes user input (image file, tool to apply)
 	* Displays output of applied tool next to original image
