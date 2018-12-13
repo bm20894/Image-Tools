@@ -14,7 +14,9 @@ A main script (run from terminal) processes an image with a library of image too
 * [ ] Polygon Packing
 	* Function Name: `poly(image)`
 * [ ] Grayscale Coloring
+	* Function Name: `grey(image)`
 * [ ] Thermal Coloring
+	* Function Name: `thermal(image)`
 
 ### Miles's Tasks
 * [x] Create Package Structure
