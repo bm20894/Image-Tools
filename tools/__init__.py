@@ -16,11 +16,14 @@ def poly(img):
     Polytools.alter(img)
     return Polytools.polyImage(img)
 def gray(img):
-    grey=img.convert('LA')
+    return img.convert('LA')
     #convert('LA') puts it in black and white, but for use in some other functions there must be three bands
 def testPoly():
-    from PIL import Image 
-    img=gray(Image.open("Image-Tools/tools/test.jpg"))
-    img.show()
-    poly(img)
+	from PIL import Image 
+	from os import path
+	folder = path.dirname(__file__)
+	filepath = path.join(folder, 'bin/test.jpg')
+	img=gray(Image.open(filepath))
+	img.show()
+	poly(img)
 testPoly()

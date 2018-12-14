@@ -206,14 +206,14 @@ def getValue(msg,type):
             print("!Please Enter a "+str(type))
 
 def help():
-    print("Command List:")
-    print("quit -- exits the program")
-    print("show -- defines the image in polygons and shows")
-    print("setborder -- set the border to an rgb value for the next polygonize")
-    print("clearborder -- sets the border to none")
-    print("scale -- sets the scale of the image")
-    print("smooth -- Set to True or False, makes edges smoothers")
-    print("help -- pull up this list")
+    print("""Command List:
+    quit -- exits the program
+    show -- defines the image in polygons and shows
+    setborder -- set the border to an rgb value for the next polygonize"
+    clearborder -- sets the border to none
+    scale -- sets the scale of the image
+    smooth -- Set to True or False, makes edges smoothers
+    help -- pull up this list""")
 def alter(img):
     global scale,outline,smoothimg
     while(True):
