@@ -13,7 +13,7 @@ A main script (run from terminal) processes an image with a library of image too
 ### Conventions
 All transformation tools are located somewhere in the tools package, and can all be called on from the root of the package. To follow the zen of python package structure: the less dots the better.
 
-### Egan's Tasks - @EganJ
+### Egan's Tasks
 * [ ] Polygon Packing
 	* Function Name: `poly(image)`
 * [ ] Grayscale Coloring
@@ -21,7 +21,7 @@ All transformation tools are located somewhere in the tools package, and can all
 * [ ] Thermal Coloring
 	* Function Name: `thermal(image)`
 
-### Miles's Tasks - @bm20894
+### Miles's Tasks
 * [x] Create Package Structure
 * [x] main.py file
 	1. [x] Takes user input (image file, tool to apply)
