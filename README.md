@@ -10,7 +10,10 @@ A main script (run from terminal) processes an image with a library of image too
 * Thermal Coloring
 * Number Visualization (colored mosaic)
 
-### Egan's Tasks
+### Conventions
+All transformation tools are located somewhere in the tools package, and can all be called on from the root of the package. To follow the zen of python package structure: the less dots the better.
+
+### Egan's Tasks - @EganJ
 * [ ] Polygon Packing
 	* Function Name: `poly(image)`
 * [ ] Grayscale Coloring
@@ -18,8 +21,13 @@ A main script (run from terminal) processes an image with a library of image too
 * [ ] Thermal Coloring
 	* Function Name: `thermal(image)`
 
-### Miles's Tasks
+### Miles's Tasks - @bm20894
 * [x] Create Package Structure
-* [ ] main.py file
-	* [x] Takes user input (image file, tool to apply)
-	* [ ] Displays output of applied tool next to original image
+* [x] main.py file
+	1. [x] Takes user input (image file, tool to apply)
+	1. [x] Displays output of applied tool
+* [x] Blur
+	* Function name: `blur(image)`
+	* Example:
+		Original image: ![toucan](tools/bin/toucan.jpg)
+		After applying Blur: ![toucan blur](tools/bin/toucan_blur.jpg)

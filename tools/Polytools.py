@@ -214,9 +214,10 @@ def help():
     scale -- sets the scale of the image
     smooth -- Set to True or False, makes edges smoothers
     help -- pull up this list""")
+
 def alter(img):
-    global scale,outline,smoothimg
-    while(True):
+    global scale, outline, smoothimg
+    while True:
         prompt=input("Command?")
         if prompt=='quit':
             break

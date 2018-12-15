@@ -1,13 +1,15 @@
-import Polytools
-import os
+from . import Polytools
+from os import path
+from .blur import blur
+
 def poly(img):
-    if(img.size[0]*img.size[1])>10000:
+    if(img.size[0]*img.size[1]) > 10000:
         while(True):
-            inp=input("Large images can take long to process. Continue? (y/n)")
-            if inp=='y':
+            inp = input("Large images can take long to process. Continue? (y/n)")
+            if inp == 'y':
                 print("Continuing.")
                 break
-            elif inp=='n':
+            elif inp == 'n':
                 print("Exiting tool.")
                 return
             else:
@@ -15,15 +17,18 @@ def poly(img):
     Polytools.runTracker(img)
     Polytools.alter(img)
     return Polytools.polyImage(img)
+
 def gray(img):
-    return img.convert('LA')
     #convert('LA') puts it in black and white, but for use in some other functions there must be three bands
+    return img.convert('LA')
+
 def testPoly():
 	from PIL import Image 
-	from os import path
 	folder = path.dirname(__file__)
 	filepath = path.join(folder, 'bin/test.jpg')
-	img=gray(Image.open(filepath))
+	img = gray(Image.open(filepath))
 	img.show()
 	poly(img)
-testPoly()
+
+if __name__ == '__main':
+	testPoly()

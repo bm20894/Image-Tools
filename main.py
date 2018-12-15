@@ -36,9 +36,8 @@ def user_input():
 
 if __name__ == '__main__':
 	data = user_input()
-	print(data)
 	# if a tool is specified, apply it to the Image and display
 	img, tool = data.get('img'), data.get('tool', None)
 	if tool:
 		trans = transform(tool)
-		trans(img)
+		trans(img).show()
