@@ -28,6 +28,5 @@ All transformation tools are located somewhere in the tools package, and can all
 	1. [x] Displays output of applied tool
 * [x] Blur
 	* Function name: `blur(image)`
-	* Example:
-		Original image: ![toucan](tools/bin/toucan.jpg)
-		After applying Blur: ![toucan blur](tools/bin/toucan_blur.jpg)
+	* Original vs Blur:
+		![toucan](tools/bin/toucan.jpg) ![toucan blur](tools/bin/toucan_blur.jpg)
