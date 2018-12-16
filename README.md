@@ -40,8 +40,7 @@ All transformation tools are located somewhere in the tools package, and can all
 	* Usage: `$ Image-Tools tools/bin/toucan.jpg -t shift`
 	* Original vs Shift vs LShift:
 
-		![toucan](tools/bin/toucan.jpg) ![toucan blur](tools/bin/toucan_shift.jpg)
-		![toucan blur](tools/bin/toucan_lshift.jpg)
+		![toucan blur](tools/bin/toucan_shift.jpg) ![toucan blur](tools/bin/toucan_lshift.jpg)
 
 * [x] Number Mosaic
 	* Function name: `color_vis(digits)`
