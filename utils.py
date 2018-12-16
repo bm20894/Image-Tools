@@ -3,7 +3,7 @@ Util package for main.py
 '''
 import sys
 from termcolor import cprint
-from tools import blur 
+from tools import blur, shift
 
 def error(msg):
 	cprint(msg, 'red')
@@ -12,7 +12,8 @@ def error(msg):
 def transform(tool):
 	'''@return: function to execute on Image object'''
 	trans = {
-		'blur': lambda img: blur(img)
+		'blur': lambda img: blur(img),
+		'shift': lambda img: shift(img)
 	}
 
 	if tool in trans:

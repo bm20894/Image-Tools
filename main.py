@@ -23,7 +23,14 @@ def user_input():
 			tool = sys.argv.pop(tool_index)
 			data['tool'] = tool
 			sys.argv.pop(tool_index - 1)
+		elif '-ts' in sys.argv:
+			tool_index = sys.argv.index('-ts') + 1
+			tool = sys.argv.pop(tool_index)
+			data['tool'] = tool
+			sys.argv.pop(tool_index - 1)
+			data['save'] = True
 		image_file = sys.argv[0]
+
 		try:
 			img = Image.open(image_file)
 		except:
@@ -38,6 +45,13 @@ if __name__ == '__main__':
 	data = user_input()
 	# if a tool is specified, apply it to the Image and display
 	img, tool = data.get('img'), data.get('tool', None)
+	fileloc = data.get('file')
+	save = data.get('save', False)
 	if tool:
 		trans = transform(tool)
-		trans(img).show()
+		newimg = trans(img)
+		newimg.show()
+		if save:
+			newimg.save(fileloc)
+	else:
+		img.show()
