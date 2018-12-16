@@ -37,4 +37,4 @@ All transformation tools are located somewhere in the tools package, and can all
 	* Original vs Shift vs LShift:
 
 		![toucan](tools/bin/toucan.jpg) ![toucan blur](tools/bin/toucan_shift.jpg)
-		![toucan blur](tools/bin/toucan_shift.jpg)
+		![toucan blur](tools/bin/toucan_lshift.jpg)
