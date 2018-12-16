@@ -16,8 +16,10 @@ def user_input():
 				 file of Image as 'file', and optional tool
 				 to apply '''
 	if len(sys.argv) > 1:
+		print(sys.argv)
 		sys.argv.pop(0)
 		data = {}
+		image_file = ''
 		if '-t' in sys.argv:
 			tool_index = sys.argv.index('-t') + 1
 			tool = sys.argv.pop(tool_index)
@@ -28,9 +30,14 @@ def user_input():
 			tool = sys.argv.pop(tool_index)
 			data['tool'] = tool
 			sys.argv.pop(tool_index - 1)
-			data['save'] = True
-		image_file = sys.argv[0]
+			data['save'] = sys.argv[0] 
 
+		if '-s' in sys.argv:
+			loc_index = sys.argv.index('-s') + 1
+			loc = sys.argv.pop(loc_index)
+			data['save'] = loc 
+
+		image_file = sys.argv[0]
 		try:
 			img = Image.open(image_file)
 		except:
@@ -52,6 +59,6 @@ if __name__ == '__main__':
 		newimg = trans(img)
 		newimg.show()
 		if save:
-			newimg.save(fileloc)
+			newimg.save(save)
 	else:
 		img.show()

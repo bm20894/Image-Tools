@@ -34,3 +34,7 @@ All transformation tools are located somewhere in the tools package, and can all
 * [x] Color Shifting
 	* Function name: `shift(image)`
 	* Shift RGB values one to the left (Red values become Blue, Green becomes Red, Blue becomes Green), or right.
+	* Original vs Shift vs LShift:
+
+		![toucan](tools/bin/toucan.jpg) ![toucan blur](tools/bin/toucan_shift.jpg)
+		![toucan blur](tools/bin/toucan_shift.jpg)
