@@ -9,14 +9,13 @@ Optional: overwrite image file with transformation
 import sys
 from matplotlib import pyplot as plt
 from PIL import Image
-from utils import error, transform
+from utils import error, transform, visualize_text
 
 def user_input():
 	''' @return: dictionary with Image object as 'img',
 				 file of Image as 'file', and optional tool
 				 to apply '''
 	if len(sys.argv) > 1:
-		print(sys.argv)
 		sys.argv.pop(0)
 		data = {}
 		image_file = ''
@@ -38,6 +37,11 @@ def user_input():
 			data['save'] = loc 
 
 		image_file = sys.argv[0]
+		if image_file.endswith('.txt'):
+			img = visualize_text(image_file)
+			img.show()
+			sys.exit()
+
 		try:
 			img = Image.open(image_file)
 		except:

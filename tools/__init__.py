@@ -1,7 +1,7 @@
 from . import Polytools
 from os import path
-from .blur import blur
-from .shift import shift 
+from .basic import shift, blur 
+from .vis import color_vis
 
 def poly(img):
     if(img.size[0]*img.size[1]) > 10000:
