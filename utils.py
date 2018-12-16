@@ -13,7 +13,8 @@ def transform(tool):
 	'''@return: function to execute on Image object'''
 	trans = {
 		'blur': lambda img: blur(img),
-		'shift': lambda img: shift(img)
+		'shift': lambda img: shift(img),
+		'lshift': lambda img: shift(img, right=False),
 	}
 
 	if tool in trans:
