@@ -1,5 +1,5 @@
 __pycache__
 tools/__pycache__
-build/
-dist/
+build
+dist
 Toucan_Tools.egg-info
