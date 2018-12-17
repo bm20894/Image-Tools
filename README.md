@@ -23,8 +23,17 @@ All transformation tools are located somewhere in the tools package, and can all
 	1. [ ] Improve Smoothing
 * [x] Grayscale Coloring
 	* Function Name: `gray(image)`
+	* Usage: `$ toucan tools/bin/toucan.jpg -t gray`
+	* Original vs Gray:
+
+		![toucan](tools/bin/toucan.jpg) ![toucan gray](tools/bin/toucan_gray.jpg)
+
 * [x] Thermal Coloring
 	* Function Name: `thermal(image)`
+	* Usage: `$ toucan tools/bin/toucan.jpg -t thermal`
+	* Thermal toucan.jpg:
+
+		![toucan thermal](tools/bin/toucan_thermal.jpg)
 
 ### Miles's Tasks
 * [x] Create Package Structure
@@ -35,9 +44,9 @@ All transformation tools are located somewhere in the tools package, and can all
 * [x] Blur
 	* Function name: `blur(image)`
 	* Usage: `$ toucan tools/bin/toucan.jpg -t blur`
-	* Original vs Blur:
+	* Blur toucan.jpg:
 		
-		![toucan](tools/bin/toucan.jpg) ![toucan blur](tools/bin/toucan_blur.jpg)
+		![toucan blur](tools/bin/toucan_blur.jpg)
 
 * [x] Color Shifting
 	* Function name: `shift(image)`

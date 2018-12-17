@@ -23,7 +23,7 @@ def poly(img):
 
 def gray(img):
     #convert('LA') puts it in black and white, but for use in some other functions there must be three bands
-    return img.convert('LA')
+    return img.convert('L')
 
 def thermal(img):
     arr=numpy.array(img)
