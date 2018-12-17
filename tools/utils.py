@@ -3,7 +3,7 @@ Util package for main.py
 '''
 import sys
 from termcolor import cprint
-from tools import blur, shift, color_vis
+from . import blur, shift, color_vis, gray, thermal
 
 def error(msg):
 	cprint(msg, 'red')
@@ -15,6 +15,8 @@ def transform(tool):
 		'blur': lambda img: blur(img),
 		'shift': lambda img: shift(img),
 		'lshift': lambda img: shift(img, right=False),
+		'gray': lambda img: gray(img),
+		'thermal': lambda img: thermal(img),
 	}
 
 	if tool in trans:
