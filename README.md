@@ -19,8 +19,8 @@ All transformation tools are located somewhere in the tools package, and can all
 ### Egan's Tasks
 * [x] Polygon Packing
 	* Function Name: `poly(image)`
-	* [] Clean Up Code and optimize
-	* [] Improve Smoothing
+	* [ ] Clean Up Code and optimize
+	* [ ] Improve Smoothing
 * [x] Grayscale Coloring
 	* Function Name: `gray(image)`
 * [x] Thermal Coloring
