@@ -2,7 +2,7 @@
 ### Client 4: Developer
 
 ## Installation
-To use, simply `pip install Toucan-Tools`. From there, all of the command-line tools will be available for use anywhere on your machine.
+To use, `$ pip install Toucan-Tools`. From there, all of the command-line tools will be available for use anywhere on your machine.
 
 ## Usage 
 A main script (run from terminal) processes an image with a library of image tools. To run: `$ toucan imagefile.jpg -t blur`. This will display a window showing the image with the applied tool.
@@ -18,9 +18,9 @@ All transformation tools are located somewhere in the tools package, and can all
 
 ### Egan's Tasks
 * [x] Polygon Packing
-	* Function Name: `poly(image)`
-	* [ ] Clean Up Code and optimize
-	* [ ] Improve Smoothing
+	1. Function Name: `poly(image)`
+	1. [ ] Clean Up Code and optimize
+	1. [ ] Improve Smoothing
 * [x] Grayscale Coloring
 	* Function Name: `gray(image)`
 * [x] Thermal Coloring

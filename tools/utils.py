@@ -1,12 +1,13 @@
 '''
-Util package for main.py
+Programmer: Miles Boswell
+
+Util package for main script
 '''
 import sys
-from termcolor import cprint
 from . import blur, shift, color_vis, gray, thermal
 
 def error(msg):
-	cprint(msg, 'red')
+	print(msg)
 	sys.exit()
 
 def transform(tool):

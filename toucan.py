@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 '''
 Programmer: Miles Boswell
-main.py
 
 Take user input from cli (image file, tool to apply on image)
 Display original image and transformed image side by side in window

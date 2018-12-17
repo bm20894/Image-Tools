@@ -1,3 +1,8 @@
+'''
+Programmer: Miles Boswell
+
+Color visualization for files with digits (ex. tools/bin/pi_100.txt)
+'''
 from PIL import Image, ImageDraw
 from math import ceil, sqrt
 

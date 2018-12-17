@@ -1,3 +1,10 @@
+'''
+Programmer: Miles Boswell
+
+Basic image tools:
+	* shift (left and right)
+	* blur
+'''
 from PIL import Image, ImageFilter
 from os import path
 
