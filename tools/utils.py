@@ -4,7 +4,7 @@ Programmer: Miles Boswell
 Util package for main script
 '''
 import sys
-from . import blur, shift, color_vis, gray, thermal
+from . import blur, shift, color_vis, gray, thermal,spheres
 
 def error(msg):
 	print(msg)
@@ -18,6 +18,7 @@ def transform(tool):
 		'lshift': lambda img: shift(img, right=False),
 		'gray': lambda img: gray(img),
 		'thermal': lambda img: thermal(img),
+		'sphere': lambda img: spheres.menu(img),
 	}
 
 	if tool in trans:

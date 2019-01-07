@@ -4,3 +4,4 @@ build
 dist
 Toucan_Tools.egg-info
 setup.py
+tools/bin/temporarysave.jpg
