@@ -107,4 +107,3 @@ def getVal(message,valClass,error="Im sorry, I didn't understand that.", accepte
 def test():
     menu(Image.open("tools/bin/toucan.jpg")).save("tools/bin/temporarysave.jpg")
     Image.open("tools/bin/temporarysave.jpg").show()
-test()
